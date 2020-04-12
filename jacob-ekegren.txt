@@ -123,3 +123,32 @@ Stretch Questions
         
         The fix for the box model is to use a numeric value for an atribute. This fixs one of 
         the 5 size attributes: height, width, padding, margin, border
+
+Additional Stretch Questions
+    1.  Research and understand what a merge conflict is and how to resolve it.
+        A merge conflict occurs when differences are not automatically resolved by Git.  
+        Typically this happends when there are conflicting changes in the same line of code.
+
+        Got back into your text editor and look for the <<<<<<< Head.  This is the original text 
+        from the base branch.  The follow the =======, the line after is the new change on the operating
+        branch, followed by >>>>>>>. At this point, to resolve, you must choose which change you want
+        to keep, the original, your branch, or make an entirely new change.
+
+    2.  Research the Git commands pull, rebase, merge. These commands will allow you to bring in changes that other developers push to the master branch.
+        The git pull command fetches and downloads a remote repo and updates the local repo to match
+        the content. 
+        
+        The git rebase is used to make it appear as though your branch was created from a different commit.
+        This is accomplished by changing the base of your branch from one commit or another.
+
+        Git merge is used to take independent lines of develpment created by git branch and integrate
+        them into a single branch.
+
+    3.  Research the Git commands reset , revert, clean. These commands will allow you to go back and amends previous commits you have made.
+        Git reset is used to undo local changes made to a Git repo.  This operates on the three trees of Git, 
+        the Commit History, the Staging Index, and the working Directory.
+
+        Git revert operates by figuring out how to invert the changes made by a commit and appends a new
+        commit with the resulting inverse content. This prevents Git from losing history.
+
+        Git Merge takes commited work from a local branch and merges it with the base branch.
