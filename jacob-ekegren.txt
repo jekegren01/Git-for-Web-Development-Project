@@ -152,3 +152,9 @@ Additional Stretch Questions
         commit with the resulting inverse content. This prevents Git from losing history.
 
         Git Merge takes commited work from a local branch and merges it with the base branch.
+
+
+        Setting up SSH per stretch requirements.
+        Setting up SSH.  I dont need to set up SSH. Because I'm using two-factor Authentication, 
+        I set up a token so that I dont need to input UserName/Password. It was the only way to bypass
+        two-factor authentication.
