@@ -60,26 +60,66 @@ https://codepen.io/jekegren01/pen/xxwxeEX
             It is used to select subelements of one larger class, and so on and so forth downward.
             Its useful when you need to style different sub elements of one larger element. 
     23. How do you select all links within a div with the class of sidebar?
+            .sidebar
     24. What is a pseudo selector?
-    25. What do we use the change the spacing between lines?
+            a pseudo selector allows you to select a secific item without knowing the
+            specific number of item.  ie...last one, first one, middle, etc.
+    25. What do we use to change the spacing between lines?
+            line-height: Value;
     26. What do we use to change the spacing between letters?
+            letter-spacing: Value. (in px or in em-reletive to fontsize)
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+            text-transform: uppercase lowercase capitalize
     28. How do I add a 1px border around my div that is dotted and black?
+            div { border: 1px dotted black }
     29. How do I select everything on the page? 
+            *  or univeral selector
     30. How do I write a comment in CSS?
+            /*  Comment  */
     31. How do I find out what file I am in, when I am using the command line? 
+            you can read the command line, it tells you what folder you are in.
     32. Using the command line - how do I see a list of files/folders in my current folder?
+            ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+            rm, because in command line, it will just carry out the command up pressing enter,
+            and cannot be undone.
+    34. Why should I use version control?  
+            Because version control allows you to maintain a series of saves and records
+            the history of all of them.  This allows you to revert to a previous version 
+            of code.
     35. How often should I commit to github?
+            Often, this is a personal preference.  But it makes sense to do it at logic points 
+            throughout your coding.
     36. What is the command we would use to push our repo up to github? 
+            git push -u origin BranchName
     37. Walk me through Lambda's git flow. 
+        git clone http address
+        git checkout -b 'BranchName'
+        make whatever changes or additions 
+        git add .
+        git commit -m 'comments'
+        git push -u origin BranchName
+        then make pull request from github
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        Block elements cause a line break where inline elements do not.  
+        So, you cant put block elements inside of inline elements.
     2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        All four sides, Top/Btm/Left/Right properties specify offsets from the
+        edges of the containing block (the ancestor relative to the positioned element)
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+        I would assume the auto value used with the width attribute allows you to take up only
+        the amount of space needed.  But, with an addition to the element, i.e. adding additional text,
+        the item would increase in width.
+    4. Name 3 elements that are diplay block by default, 2 elements that inline by default and 1 element that is display in are inline-block by default
+        block level by default: header, footer, section
+        inline by default: span, a, img
+        inline-block by default: button, input
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-
+        Since all elements are considered boxes in HTML, the CSS box model allows us to add
+        border around elements and spacing between the elements.  
+        
+        The fix for the box model is to use a numeric value for an atribute. This fixs one of 
+        the 5 size attributes: height, width, padding, margin, border
