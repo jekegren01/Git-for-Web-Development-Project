@@ -1,3 +1,4 @@
+
 https://codepen.io/jekegren01/pen/xxwxeEX
 
     1.  What is Semantic HTML? 
@@ -32,17 +33,32 @@ https://codepen.io/jekegren01/pen/xxwxeEX
             As many times as neccesary to provide continuity and use only one style 
             selector to style multiple elements.
     13. How do I get my link to open in a new tab?
-
+            Hold Command and click the link.
     14. What is the alt attribute in the image tag used for? 
-    
+            It is used to describe the img or what it is representing.
     15. How do I reference an id?
+            With a #nameofID
     16. What is the difference between a section and a div
+            A div is more general, but they are the same thing. Div means division,
+            which new sections are new divisions.
     17. What is CSS used for? 
+            CSS is used to style HTML.
     18. How to we select an element? Example - every h2 on the page
+            h2 { attribute: value;}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+            A class is used to tag a number of elements, an ID is used to tag 
+            one element.  ID tags should be used very sparingly so as to not cause issues 
+            with your CSS styling.  You might tag one specific line with an ID tag with in a section
+            if you are wanting to style that line in a unique way, different from everything else.
     20. How do we select classes in CSS?
+            Classes are selected with a .className.
     21. How do we select a p element with a single class of “human””?
+            there are a couple of ways
+            .human
+            p.human
     22. What is a parent child selector? When would this be useful? 
+            It is used to select subelements of one larger class, and so on and so forth downward.
+            Its useful when you need to style different sub elements of one larger element. 
     23. How do you select all links within a div with the class of sidebar?
     24. What is a pseudo selector?
     25. What do we use the change the spacing between lines?
