@@ -1,0 +1,160 @@
+
+https://codepen.io/jekegren01/pen/xxwxeEX
+
+    1.  What is Semantic HTML? 
+            HTML with meaning
+    2.  What is HTML used for? 
+            It is the foundation for all of the text and items on a webpage. 
+    3.  What is an attribute and where do we put it? 
+            An attribute defines additional properties of an element in HTML. There
+            many ways to put attributes into HTML. They are made up of two parts,
+            a name and an attribute.
+    4.  What is the h1 tag used for? How many times should I use it on a page?
+            h1 tags are used to signify the most important title/header of a page.
+            There should only be 1 used.
+    5.  Name two tags that have required attributes
+            font-size
+            height, width
+    6.  What do we put in the head of our HTML document? 
+            This is an odd question.  I would say comments neccesary to pass on.
+            Or, the head tag is used to hold Metadata about the page.
+    7.  What is an id? 
+            An id is a specific tag for hmtl. Only one id should be used for a 
+            specific tag.
+    8.  What elements can I add an id to? 
+            Any elements can be used with an id tag.  But only once.
+    9.  How many times can I use the same id on a page?   
+            Once
+    10. What is a class? 
+            A class is tag that can be used to identify more that one element.
+    11. What elements can I add a class to?
+            Any elements can be added to a class.
+    12. How many times can I use the same class on a page? 
+            As many times as neccesary to provide continuity and use only one style 
+            selector to style multiple elements.
+    13. How do I get my link to open in a new tab?
+            Hold Command and click the link.
+    14. What is the alt attribute in the image tag used for? 
+            It is used to describe the img or what it is representing.
+    15. How do I reference an id?
+            With a #nameofID
+    16. What is the difference between a section and a div
+            A div is more general, but they are the same thing. Div means division,
+            which new sections are new divisions.
+    17. What is CSS used for? 
+            CSS is used to style HTML.
+    18. How to we select an element? Example - every h2 on the page
+            h2 { attribute: value;}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+            A class is used to tag a number of elements, an ID is used to tag 
+            one element.  ID tags should be used very sparingly so as to not cause issues 
+            with your CSS styling.  You might tag one specific line with an ID tag with in a section
+            if you are wanting to style that line in a unique way, different from everything else.
+    20. How do we select classes in CSS?
+            Classes are selected with a .className.
+    21. How do we select a p element with a single class of “human””?
+            there are a couple of ways
+            .human
+            p.human
+    22. What is a parent child selector? When would this be useful? 
+            It is used to select subelements of one larger class, and so on and so forth downward.
+            Its useful when you need to style different sub elements of one larger element. 
+    23. How do you select all links within a div with the class of sidebar?
+            .sidebar
+    24. What is a pseudo selector?
+            a pseudo selector allows you to select a secific item without knowing the
+            specific number of item.  ie...last one, first one, middle, etc.
+    25. What do we use to change the spacing between lines?
+            line-height: Value;
+    26. What do we use to change the spacing between letters?
+            letter-spacing: Value. (in px or in em-reletive to fontsize)
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+            text-transform: uppercase lowercase capitalize
+    28. How do I add a 1px border around my div that is dotted and black?
+            div { border: 1px dotted black }
+    29. How do I select everything on the page? 
+            *  or univeral selector
+    30. How do I write a comment in CSS?
+            /*  Comment  */
+    31. How do I find out what file I am in, when I am using the command line? 
+            you can read the command line, it tells you what folder you are in.
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+            ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+            rm, because in command line, it will just carry out the command up pressing enter,
+            and cannot be undone.
+    34. Why should I use version control?  
+            Because version control allows you to maintain a series of saves and records
+            the history of all of them.  This allows you to revert to a previous version 
+            of code.
+    35. How often should I commit to github?
+            Often, this is a personal preference.  But it makes sense to do it at logic points 
+            throughout your coding.
+    36. What is the command we would use to push our repo up to github? 
+            git push -u origin BranchName
+    37. Walk me through Lambda's git flow. 
+        git clone http address
+        git checkout -b 'BranchName'
+        make whatever changes or additions 
+        git add .
+        git commit -m 'comments'
+        git push -u origin BranchName
+        then make pull request from github
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        Block elements cause a line break where inline elements do not.  
+        So, you cant put block elements inside of inline elements.
+    2. What happens when an element is positioned absolutely? 
+        All four sides, Top/Btm/Left/Right properties specify offsets from the
+        edges of the containing block (the ancestor relative to the positioned element)
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+        I would assume the auto value used with the width attribute allows you to take up only
+        the amount of space needed.  But, with an addition to the element, i.e. adding additional text,
+        the item would increase in width.
+    4. Name 3 elements that are diplay block by default, 2 elements that inline by default and 1 element that is display in are inline-block by default
+        block level by default: header, footer, section
+        inline by default: span, a, img
+        inline-block by default: button, input
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        Since all elements are considered boxes in HTML, the CSS box model allows us to add
+        border around elements and spacing between the elements.  
+        
+        The fix for the box model is to use a numeric value for an atribute. This fixs one of 
+        the 5 size attributes: height, width, padding, margin, border
+
+Additional Stretch Questions
+    1.  Research and understand what a merge conflict is and how to resolve it.
+        A merge conflict occurs when differences are not automatically resolved by Git.  
+        Typically this happends when there are conflicting changes in the same line of code.
+
+        Got back into your text editor and look for the <<<<<<< Head.  This is the original text 
+        from the base branch.  The follow the =======, the line after is the new change on the operating
+        branch, followed by >>>>>>>. At this point, to resolve, you must choose which change you want
+        to keep, the original, your branch, or make an entirely new change.
+
+    2.  Research the Git commands pull, rebase, merge. These commands will allow you to bring in changes that other developers push to the master branch.
+        The git pull command fetches and downloads a remote repo and updates the local repo to match
+        the content. 
+        
+        The git rebase is used to make it appear as though your branch was created from a different commit.
+        This is accomplished by changing the base of your branch from one commit or another.
+
+        Git merge is used to take independent lines of develpment created by git branch and integrate
+        them into a single branch.
+
+    3.  Research the Git commands reset , revert, clean. These commands will allow you to go back and amends previous commits you have made.
+        Git reset is used to undo local changes made to a Git repo.  This operates on the three trees of Git, 
+        the Commit History, the Staging Index, and the working Directory.
+
+        Git revert operates by figuring out how to invert the changes made by a commit and appends a new
+        commit with the resulting inverse content. This prevents Git from losing history.
+
+        Git Merge takes commited work from a local branch and merges it with the base branch.
+
+
+        Setting up SSH per stretch requirements.
+        Setting up SSH.  I dont need to set up SSH. Because I'm using two-factor Authentication, 
+        I set up a token so that I dont need to input UserName/Password. It was the only way to bypass
+        two-factor authentication.
